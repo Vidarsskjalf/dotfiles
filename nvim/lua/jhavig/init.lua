@@ -1,0 +1,5 @@
+require('jhavig.lazy')
+require('jhavig.mason')
+require('jhavig.options')
+require('jhavig.keymap')
+require('jhavig.treesitter')

@@ -1,0 +1,39 @@
+# command=$SCRIPT_DIR/$BLOCK_NAME
+
+[spotify]
+#label=󰓇 
+command=~/.config/i3/scripts/spotify_i3blocks.sh
+color=#c0d6e4
+interval=5
+
+[iface]
+#instance=wlan0
+label=󰒍
+command=$SCRIPT_DIR/iface/iface
+color=#91b462
+interval=10
+seperator=true
+
+[cpu_usage]
+interval=1
+label= 
+color=#219897
+command=$SCRIPT_DIR/cpu_usage/cpu_usage
+
+[MEM]
+#command=free -h | awk '/Mem:/ { printf(" 🐏 %4s/%s \n", $3, $2) }'
+#command=$SCRIPT_DIR/memory/memory
+interval=1
+color=#00B4EB
+
+[BATTERY]
+label= 
+command=$SCRIPT_DIR/battery-poly/battery-poly
+interval=1
+color=#20b2aa
+
+[TIME_DATE]
+command=date +" 📅 %a, %d %b - 🕑 %H:%M:%S"
+interval=1
+color=#c0d6e4
+
